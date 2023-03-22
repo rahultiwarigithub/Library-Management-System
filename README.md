@@ -74,7 +74,7 @@ Here are the list of APIs implemented as part of the backend server
 - **PUT** /v1/library/users/books/return
 
 
-## Steps to run locally
+# Steps to run the application locally
 
 #### Clone the project
 `
@@ -110,4 +110,6 @@ npm start
 
 #### Launch the UI from your browser http://localhost:3000
 
+
+*Author: https://github.com/rahultiwarigithub*
 
