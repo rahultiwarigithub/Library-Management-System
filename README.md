@@ -77,38 +77,40 @@ Here are the list of APIs implemented as part of the backend server
 # Steps to run the application locally
 
 #### Clone the project
-`
+```
 git clone https://github.com/rahultiwarigithub/Library-Management-System.git
-`
+```
 
 #### Go to the project directory
-`
+```
 cd Library-Management-System
-`
+```
 
 #### Install dependencies of backend
-`
+```
 cd backend
 npm install
-`
+```
 
 #### Start the server
-`
+```
 npm start
-`
+```
 
 #### Install dependencies of frontend
-`
+```
 cd ../frontend
 npm install
-`
+```
 
 #### Start the client
-`
+```
 npm start
-`
+```
 
 #### Launch the UI from your browser http://localhost:3000
+
+
 
 
 *Author: https://github.com/rahultiwarigithub*
