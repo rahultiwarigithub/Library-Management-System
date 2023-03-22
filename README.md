@@ -11,11 +11,11 @@ The library system management comprises of mainly 4 entities: **Admin**, **User*
 #### Features for normal users :
 - View all the books present in the library 
 - See **available** books (in GREEN) and **unavailable** books (in RED)
-- Only registered users and access to the library
+- Only registered users has access to the library
 - For every available book, the borrow button is active while return button is disabled
 - For every unavailable book, the return button is active while borrow button is disabled
 - When user borrows a book the status changes to unavailable. Similarly, when user returns a book the status changes back to available
-- A user can return only that book borrowed by him/her
+- A user can return only that book which is borrowed by him/her
 
 #### A book entity has three properties :
 ![book_data_sample](https://user-images.githubusercontent.com/36193784/226751308-9e09c1a0-9cd5-4bcf-8ffa-b8b3cfb728f7.png)
@@ -27,7 +27,7 @@ The library system management comprises of mainly 4 entities: **Admin**, **User*
 ![register_page](https://user-images.githubusercontent.com/36193784/226751891-c905e785-055e-4b54-898a-d4c0f0b1d8f4.png)
 
 
-From this page, any user can registered himself into the library. Only after successful registration he/she will be able to access library books. Every transaction made by user will be persisted to the database in teh transaction records 
+From this page, any user can registered himself into the library. Only after successful registration he/she will be able to access library books. Every transaction made by user will be persisted to the database in the transaction records 
 
 #### Below are the properties of a transaction entity :
 ![transaction_data_sample](https://user-images.githubusercontent.com/36193784/226753643-01cc614e-6de7-4bc0-bae7-8caea9c286ce.png)
@@ -44,8 +44,8 @@ Admin has to login from this page to perform additional functionalities over a n
 
 #### Additional features for an admin :
 - Admin can add a new book in the library
-- An admin can remove an existing book from the library
-- Also, admin can see all the transaction records of all books and users (**NOTE:** *not implemented on UI but the backend API for the same is implemented*)
+- An admin can remove existing book from the library
+- Also, admin can see the transaction records of all books and users (**NOTE:** *not implemented on UI but the backend API for the same is implemented*)
 
 #### An admin entity has following properties :
 ![admin_data_sample](https://user-images.githubusercontent.com/36193784/226755819-e1c0f0b6-13e0-48d9-b358-e1b8511acd76.png)
@@ -74,7 +74,7 @@ Here are the list of APIs implemented as part of the backend server
 - **PUT** /v1/library/users/books/return
 
 
-# Steps to run the application locally
+# Steps to run the application code locally
 
 #### Clone the project
 ```
