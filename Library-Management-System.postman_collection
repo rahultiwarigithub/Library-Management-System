@@ -1,0 +1,320 @@
+{
+	"info": {
+		"_postman_id": "fd8e8246-32ac-4b71-b82e-4b3bfad4dca2",
+		"name": "Library Management System",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6951138"
+	},
+	"item": [
+		{
+			"name": "Register Admin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"admin\",\r\n    \"email\": \"admin@mail.com\",\r\n    \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL3001}}/v1/library/admin/register",
+					"host": [
+						"{{URL3001}}"
+					],
+					"path": [
+						"v1",
+						"library",
+						"admin",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login Admin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"admin\",\r\n    \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL3001}}/v1/library/admin/login",
+					"host": [
+						"{{URL3001}}"
+					],
+					"path": [
+						"v1",
+						"library",
+						"admin",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Transactions",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbmRhdGEiOnsidXNlcm5hbWUiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AbWFpbC5jb20ifSwiaWF0IjoxNjc5MTYyODU1LCJleHAiOjE2NzkxNjY0NTV9._06wypugdsQXg0PMbHs7Y8-g8Zu1gi0QYVzeG3O1amI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL3001}}/v1/library/admin/allbooks",
+					"host": [
+						"{{URL3001}}"
+					],
+					"path": [
+						"v1",
+						"library",
+						"admin",
+						"allbooks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Book",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbmRhdGEiOnsidXNlcm5hbWUiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AbWFpbC5jb20ifSwiaWF0IjoxNjc5MTYyODU1LCJleHAiOjE2NzkxNjY0NTV9._06wypugdsQXg0PMbHs7Y8-g8Zu1gi0QYVzeG3O1amI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"wildfire\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL3001}}/v1/library/admin/addbook",
+					"host": [
+						"{{URL3001}}"
+					],
+					"path": [
+						"v1",
+						"library",
+						"admin",
+						"addbook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remove Book",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbmRhdGEiOnsidXNlcm5hbWUiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AbWFpbC5jb20ifSwiaWF0IjoxNjc5MDA1NDU4LCJleHAiOjE2NzkwMDkwNTh9.4UaG4KKy3br7Iz6799S9fJGrFLYAUmCnmSNS2yx3zU0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{URL3001}}/v1/library/admin/removebook/amazeworld",
+					"host": [
+						"{{URL3001}}"
+					],
+					"path": [
+						"v1",
+						"library",
+						"admin",
+						"removebook",
+						"amazeworld"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"ab\",\r\n    \"name\": \"abhay\",\r\n    \"email\": \"ab@mail.com\",\r\n    \"contact\": \"1234567890\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL3001}}/v1/library/users/register",
+					"host": [
+						"{{URL3001}}"
+					],
+					"path": [
+						"v1",
+						"library",
+						"users",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All Books",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL3001}}/v1/library/books",
+					"host": [
+						"{{URL3001}}"
+					],
+					"path": [
+						"v1",
+						"library",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Available Books",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL3001}}/v1/library/books/available",
+					"host": [
+						"{{URL3001}}"
+					],
+					"path": [
+						"v1",
+						"library",
+						"books",
+						"available"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Book Status",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL3001}}/v1/library/books/status/amazeworld",
+					"host": [
+						"{{URL3001}}"
+					],
+					"path": [
+						"v1",
+						"library",
+						"books",
+						"status",
+						"amazeworld"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrow Book",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"dk\",\r\n    \"bookname\": \"amazeworld\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL3001}}/v1/library/users/books/borrow",
+					"host": [
+						"{{URL3001}}"
+					],
+					"path": [
+						"v1",
+						"library",
+						"users",
+						"books",
+						"borrow"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Return Book",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"dk\",\r\n    \"bookname\": \"amazeworld\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL3001}}/v1/library/users/books/return",
+					"host": [
+						"{{URL3001}}"
+					],
+					"path": [
+						"v1",
+						"library",
+						"users",
+						"books",
+						"return"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

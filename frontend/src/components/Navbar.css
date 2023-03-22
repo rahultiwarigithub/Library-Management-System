@@ -1,0 +1,12 @@
+.nav-item {
+    padding: 0.5rem;
+    font-size: large;
+}
+
+.form-inline {
+    font-size: large;
+}
+
+.form-inline button {
+    margin: 0.5rem;
+}

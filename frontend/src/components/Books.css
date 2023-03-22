@@ -1,0 +1,30 @@
+.colorbox-row {
+    padding: 2rem;
+    padding-top: 0rem;
+    padding-left: 1rem;
+}
+
+.column1 {
+    color: #FAE6FF;
+}
+
+.column3 {
+    color: #FAE6FF;
+}
+
+.column2 {
+    margin-right: 8rem;
+    background-color: #7bdb7e;
+}
+
+.column4 {
+    margin-left: 1.5rem;
+    margin-right: 8rem;
+    background-color: #ef6868;
+}
+
+.colorbox-col {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 0.3rem;
+}
